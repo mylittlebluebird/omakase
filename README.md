@@ -9,10 +9,10 @@ User Region based restaurant recommendation `AI Model`
 
 <table>
   <tbody>
-      <td align="center" valign="top" width="25%"><a href="https://landwhale2.github.io/"><img src="https://avatars.githubusercontent.com/u/153490751?v=4" width="150px;" alt="mylittlebluebird"/><br /><sub><b>mylittlebluebird</b></sub></a></td>
-      <td align="center" valign="top" width="25%"><a href="https://landwhale2.github.io/"><img src="https://avatars.githubusercontent.com/u/100324737?v=4" width="150px;" alt="umjaeshik"/><br /><sub><b>umjaeshik</b></sub></a></td>
-      <td align="center" valign="top" width="25%"><a href="https://landwhale2.github.io/"><img src="https://avatars.githubusercontent.com/u/77429760?v=4" width="150px;" alt="joomong0126"/><br /><sub><b>joomong0126</b></sub></a></td>
-      <td align="center" valign="top" width="25%"><a href="https://landwhale2.github.io/"><img src="https://avatars.githubusercontent.com/u/153490852?v=4" width="150px;" alt="jinhoheoo"/><br /><sub><b>jinhoheoo</b></sub></a></td>
+      <td align="center" valign="top" width="25%"><a href="https://github.com/mylittlebluebird"><img src="https://avatars.githubusercontent.com/u/153490751?v=4" width="150px;" alt="mylittlebluebird"/><br /><sub><b>mylittlebluebird</b></sub></a></td>
+      <td align="center" valign="top" width="25%"><a href="https://github.com/umjaeshik"><img src="https://avatars.githubusercontent.com/u/100324737?v=4" width="150px;" alt="umjaeshik"/><br /><sub><b>umjaeshik</b></sub></a></td>
+      <td align="center" valign="top" width="25%"><a href="https://github.com/joomong0126"><img src="https://avatars.githubusercontent.com/u/77429760?v=4" width="150px;" alt="joomong0126"/><br /><sub><b>joomong0126</b></sub></a></td>
+      <td align="center" valign="top" width="25%"><a href="https://github.com/jinhoheoo"><img src="https://avatars.githubusercontent.com/u/153490852?v=4" width="150px;" alt="jinhoheoo"/><br /><sub><b>jinhoheoo</b></sub></a></td>
       
   </tbody>
 </table>
