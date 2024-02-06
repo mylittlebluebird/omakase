@@ -1,17 +1,17 @@
-INTEL AI SW ACADEMY OMAKASE TEAM
 ---
-# 데이터 형식 지켜주세요!!
+## OMAKASE TEAM
 
-```
-name,reviews
-복많네해물칼국수,파주출판단지본점,맛있어요 칼국수가 매콤해요
-가림시골밥상,반찬 남김없이 싹 다 먹었어요ㅋㅋㅋ 빈접시 만들때마다 도장깨기하는 느낌이라 재밌었어요. 석쇠 소불고기 추천합니다! 잡채는 별로였고 미역초무침은 좋아하지 않아 리필x. 생선은 그냥 생선ㅎㅎ 그 외 나머지 반찬들은 다 맛있고 좋았어요~ 꼬들무생채랑 고기랑  잘 어울려서 리필 많이 했고 나물류도 좋아해서 여러번 먹었어요ㅋㅋ 청포묵등 처음 나오는 4종도 다 리필가능하고 상추쌈까지 나와 진짜 든든합니다. 이 근처 놀러오면 또 가고 싶어요
-장단콩두부촌,맑고 깨끗한 두부요리맛집입니다. 어르신들 부모님들 모시고 방문하기 딱 좋을것같아요 ㅎㅎ
-.
-.
-.
-
-
-```
+###### LINK: [INTEL AI SW ACADEMY](https://kg.korchamhrd.net/education/professionalSkillEduDetail.do?rootMenuId=3417&menuId=3422&gaebalwon_cd=04000&gwajeong_no=M2023028)
+User Region based restaurant recommendation `AI Model`
 
 ---
+#### Members
+mylittlebluebird · umjaeshik · joomong0126 · jinhoheoo
+
+---
+#### Language
+Python
+
+---
+#### Tools
+Pycharm
