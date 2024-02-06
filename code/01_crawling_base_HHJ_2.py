@@ -19,7 +19,7 @@ def set_restaurant_page(num, page):
     while(selected_page_num != num):
         print('PAGE SETTING    :', selected_page_num, '/', num)
         driver.find_elements(By.CLASS_NAME, 'eUTV2')[1].click()
-        time.sleep(1)
+        time.sleep(0.2)
         selected_page_num = int(driver.find_element(By.CLASS_NAME, 'mBN2s.qxokY').text)
     print('PAGE SETTING END:', selected_page_num, '/', num)
     scroll_down_restaurant(page)
@@ -33,8 +33,7 @@ def scroll_down_restaurant(num):
     while (1):
         contents = driver.find_element(By.CLASS_NAME, 'Ryr1F')
         restaurant_list = contents.find_elements(By.CLASS_NAME, 'UEzoS.rTjJo')
-        btn = restaurant_list[-1].find_element(By.CLASS_NAME, 'ngGKH')
-        action.move_to_element(btn).perform()
+        action.move_to_element(restaurant_list[-1]).perform()
         time.sleep(1)
         if len(restaurant_list) >= num:
             print('\rPage Down END:', cnt, '>', len(restaurant_list), end="")
@@ -47,7 +46,7 @@ def scroll_down_restaurant(num):
     return
 
 #검색어
-locations = ['교하동', '금촌동', '일산서구', '일산동구']
+locations = ['김포 한강신도시']
 
 while(1):
     try:
@@ -154,7 +153,7 @@ while(1):
                         except:
                             print('\rReviews More BTN Error')
 
-                        if review_count > 1000:
+                        if review_count > 500:
                             break
 
                     # 리뷰 출력
