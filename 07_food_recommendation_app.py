@@ -7,19 +7,34 @@ from gensim.models import Word2Vec
 from scipy.io import mmread
 import pickle
 from PyQt5.QtCore import QStringListModel
+from PyQt5.QtGui import QPixmap
 
-form_window = uic.loadUiType('./movie_recommendation.ui')[0]
+
+
+form_window = uic.loadUiType('./main.ui')[0]
 
 
 class Exam(QWidget, form_window):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.Tfidf_matrix = mmread('./models/Tfidf_naver_review.mtx').tocsr()
-        with open('./models/tfidf_naver.pickle', 'rb') as f:
+        # QPixmap 객체
+        self.pixmap = QPixmap('./ui_background.jpg')
+        # self.label_2 = QLabel(self)
+
+        self.label_2.setPixmap(self.pixmap)  # 이미지 세팅
+        self.label_2.setContentsMargins(0, 0, 0, 0)
+        self.label_2.resize(self.pixmap.width(), self.pixmap.height())
+        self.label_2.raise_()
+        self.comboBox.raise_()
+        self.lbl_recommendation.raise_()
+        self.btn_recommendation.raise_()
+        self.le_keyword.raise_()
+        self.Tfidf_matrix = mmread('./models/tfidf_restaurant_review.mtx').tocsr()
+        with open('./models/tfidf.pickle', 'rb') as f:
             self.Tfidf = pickle.load(f)
-        self.embedding_model = Word2Vec.load('./models/word2vec_naver_review.model')
-        self.df_reviews = pd.read_csv('./cleaned_naver_reviews.csv')
+        self.embedding_model = Word2Vec.load('./models/word2vec_restaurant_review.model')
+        self.df_reviews = pd.read_csv('./data_naver/cleaned_data.csv')
         self.names = list(self.df_reviews['names'])
         self.names.sort()
         for title in self.names:
@@ -33,6 +48,7 @@ class Exam(QWidget, form_window):
 
         self.comboBox.currentIndexChanged.connect(self.combobox_slot)
         self.btn_recommendation.clicked.connect(self.btn_slot)
+
 
     def btn_slot(self):
         keyword = self.le_keyword.text()
@@ -81,7 +97,7 @@ class Exam(QWidget, form_window):
         print(movie_idx)
         cosine_sim = linear_kernel(self.Tfidf_matrix[movie_idx], self.Tfidf_matrix)
         recommendation = self.getRecommendation(cosine_sim)
-        recommendation = '\n'.join(list(recommendation))
+        recommendation = '\n'.join(list(recommendation[:11]))
         return recommendation
 
     def getRecommendation(self, cosine_sim):
