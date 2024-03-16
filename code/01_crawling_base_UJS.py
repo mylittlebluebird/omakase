@@ -6,7 +6,7 @@ import random
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-# 마우스를 menu 요소 중앙으로 이동한 뒤 hidden_submenu 요소를 클릭하는 것을 실행
+# 마우스를 menu 요소 중앙으로 이동한 뒤 hidden_submenu 요소를 클릭하는 것을 실행1
 
 
 import re
